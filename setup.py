@@ -4,21 +4,21 @@
 ### Do not forget to adjust the following variables to your own plugin.
 
 # The plugin's identifier, has to be unique
-plugin_identifier = "gpiocontrol"
+plugin_identifier = "gpiocontrolsysfs"
 
 # The plugin's python package, should be "octoprint_<plugin identifier>", has to be unique
-plugin_package = "octoprint_gpiocontrol"
+plugin_package = "octoprint_gpiocontrol_sysfs"
 
 # The plugin's human readable name. Can be overwritten within OctoPrint's internal data via __plugin_name__ in the
 # plugin module
-plugin_name = "OctoPrint-GpioControl"
+plugin_name = "OctoPrint-GpioControlSysFs"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
 plugin_version = "1.0.8"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
-plugin_description = """GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi."""
+plugin_description = """GPIO Control SYSFS adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi."""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
 plugin_author = "Damian Wójcik"
@@ -33,7 +33,7 @@ plugin_url = "https://github.com/catgiggle/OctoPrint-GpioControl"
 plugin_license = "AGPLv3"
 
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = ["RPi.GPIO"]
+plugin_requires = ["gpio"]
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point
